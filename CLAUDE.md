@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a full-stack starter project combining:
 - **Backend**: Spring Boot 3.5.5 with Java 21
-- **Frontend**: Angular 20 with Material Design
+- **Frontend**: Angular 21 with Material Design
 - **Build System**: Maven with Frontend Maven Plugin integration
 
 The project uses a monorepo structure where the Angular frontend is located in `src/main/frontend/` and is built as part of the Maven lifecycle.
@@ -22,7 +22,7 @@ The project uses a monorepo structure where the Angular frontend is located in `
 
 ### Frontend (Angular)
 - Location: `src/main/frontend/`
-- Angular 20 with standalone components (no NgModules)
+- Angular 21 with standalone components (no NgModules)
 - Material Design 3 theming with Azure primary palette
 - Uses SCSS for styling
 - TypeScript configuration with strict mode
@@ -78,7 +78,7 @@ ng test
 ## Key Technologies & Patterns
 
 ### Frontend
-- **Angular 20**: Uses modern standalone components, signals, and new control flow
+- **Angular 21**: Uses modern standalone components, signals, and new control flow
 - **Material Design**: Pre-configured with mat.theme() and system variables
 - **Styling**: SCSS with Material 3 design tokens
 - **Component Structure**: Uses separate files (.ts, .html, .scss)

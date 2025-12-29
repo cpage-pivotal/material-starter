@@ -23,6 +23,7 @@ The project uses a monorepo structure where the Angular frontend is located in `
 ### Frontend (Angular)
 - Location: `src/main/frontend/`
 - Angular 21 with standalone components (no NgModules)
+- Zoneless change detection (no Zone.js dependency)
 - Material Design 3 theming with Azure primary palette
 - Uses SCSS for styling
 - TypeScript configuration with strict mode
@@ -79,6 +80,7 @@ ng test
 
 ### Frontend
 - **Angular 21**: Uses modern standalone components, signals, and new control flow
+- **Zoneless**: Uses `provideZonelessChangeDetection()` for optimal performance without Zone.js
 - **Material Design**: Pre-configured with mat.theme() and system variables
 - **Styling**: SCSS with Material 3 design tokens
 - **Component Structure**: Uses separate files (.ts, .html, .scss)

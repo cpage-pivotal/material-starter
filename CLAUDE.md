@@ -5,8 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is a full-stack starter project combining:
-- **Backend**: Spring Boot 3.5.5 with Java 21
-- **Frontend**: Angular 21 with Material Design
+- **Backend**: Spring Boot 4.0.2 with Java 21
+- **Frontend**: Angular 21.1 with Material Design
 - **Build System**: Maven with Frontend Maven Plugin integration
 
 The project uses a monorepo structure where the Angular frontend is located in `src/main/frontend/` and is built as part of the Maven lifecycle.
@@ -22,12 +22,12 @@ The project uses a monorepo structure where the Angular frontend is located in `
 
 ### Frontend (Angular)
 - Location: `src/main/frontend/`
-- Angular 21 with standalone components (no NgModules)
+- Angular 21.1 with standalone components (no NgModules)
 - Zoneless change detection (no Zone.js dependency)
 - Material Design 3 theming with Azure primary palette
 - Uses SCSS for styling
 - TypeScript configuration with strict mode
-- Karma + Jasmine for testing
+- Vitest for testing
 
 ## Development Commands
 
@@ -79,7 +79,7 @@ ng test
 ## Key Technologies & Patterns
 
 ### Frontend
-- **Angular 21**: Uses modern standalone components, signals, and new control flow
+- **Angular 21.1**: Uses modern standalone components, signals, and new control flow
 - **Zoneless**: Uses `provideZonelessChangeDetection()` for optimal performance without Zone.js
 - **Material Design**: Pre-configured with mat.theme() and system variables
 - **Styling**: SCSS with Material 3 design tokens
@@ -94,7 +94,7 @@ ng test
 ## Build Integration
 
 The Maven build automatically:
-1. Installs Node.js v22.12.0 and npm in `target/`
+1. Installs Node.js v24.13.0 and npm in `target/`
 2. Runs `npm ci` to install frontend dependencies
 3. Executes `ng build` to create production frontend build
 4. Packages everything into a single Spring Boot JAR
